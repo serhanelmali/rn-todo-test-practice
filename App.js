@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   KeyboardAvoidingView,
   Platform,
@@ -35,6 +36,7 @@ export default function App() {
               <TouchableOpacity
                 key={item.id}
                 onPress={() => deleteTask(item.id)}
+                testID="deleteButton"
               >
                 <Task text={item.value} />
               </TouchableOpacity>
